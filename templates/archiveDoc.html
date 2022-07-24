@@ -1,0 +1,44 @@
+{% extends 'xodim.html' %}
+{% load static %}
+{% block content %}
+<div class="right-box">
+    <div class="card_right4">
+        <div class="reference_box2">
+            <h3>Ko’rib chiqilgan</h3>
+            <div class="xujjat">
+                <div class="xujjat_raqami">
+                    <p>Xujjat raqami</p>
+                    <span>ID {{ object.id }}</span>
+                </div>
+                <div class="xujjat_turi">
+                    <p>Xujjat turi</p>
+                    <span>{{ object.type_doc }}</span>
+                </div>
+                <div class="xujjat_sana">
+                    <p>Xujjat yaratilgan sana</p>
+                    <span>{{ object.submit_date }}</span>
+                </div>
+            </div>
+            <div class="qisqa">
+                <div class="qisqa_mazmun">
+                    <p>Qiska mazmuni</p>
+                    <span>{{ object.comment }}</span>
+                </div>
+                <div class="qisqa_img">
+                    <a href="#" class="reference_card">
+                        <img src="images/Group 39.png" alt=""/>
+<!--                        <p>14.02.2021</p>-->
+                    </a>
+                    <p class="ball">
+                        Berilgan ball:
+                        <br/> {{ object.score }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+{% endblock content %}

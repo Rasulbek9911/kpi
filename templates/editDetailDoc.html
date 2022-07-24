@@ -1,0 +1,16 @@
+{% extends 'xodim.html' %}
+{% load static %}
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button class="btn btn-info ml-2" type="submit">Update</button>
+
+</form>
+
+
+</div>
+</div>
+</section>
+{% endblock content %}
